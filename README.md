@@ -56,6 +56,9 @@ Then: **heatmaps**, because if you’re going to claim you’ve got a universe l
 ## The narrative
 
 ### 1) The Universe Ledger (X)
+
+![Outcomes](assets/selected_outcomes_720.png)
+
 Imagine the universe contains a gigantic deterministic answer sheet:
 
 - every possible “setting” corresponds to a **column**
