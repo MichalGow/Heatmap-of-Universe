@@ -13,8 +13,8 @@ It’s educational first, provocative second, and definitely not a claim about w
 ### 1) Clone + create a virtualenv
 
 ```bash
-git clone <your-repo-url>
-cd heatmap-of-universe
+git clone https://github.com/MichalGow/Heatmap-of-Universe
+cd Heatmap-of-Universe
 
 python -m venv .venv
 source .venv/bin/activate
