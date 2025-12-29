@@ -103,7 +103,29 @@ That’s the point of the sandbox:
 
 Columns are indices `0..n_cols-1`.
 
-We interpret them as angles on `[0°, 180°]`:
+We interpret them as angles on `[0°, 180°]` by mapping each column index to a degree value:
 
 ```python
 col_settings = np.linspace(0.0, 180.0, n_cols)
+```
+
+So the angular step per column is:
+
+```text
+step_deg = 180 / (n_cols - 1)
+```
+
+When you request angles like `0°, 45°, 90°, 180°`, we convert them to the nearest column indices:
+
+```python
+idx = round((deg / 180) * (n_cols - 1))
+```
+
+…and print both:
+- the chosen indices
+- the actual degrees represented after rounding
+
+This repo demonstrates it for:
+- `n_cols = 20` (coarse)
+- `n_cols = 360` (fine-ish)
+- `n_cols = 720` (finer)
